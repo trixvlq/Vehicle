@@ -33,13 +33,7 @@
    git clone https://github.com/trixvlq/CarManagement.git
    ```
 
-2. Перейти в директорию проекта:
-
-   ```bash
-   cd backend
-   ```
-
-3.  Создать файл `.env` в директории `backend` и задать следующие переменные:
+2.  Создать файл `.env` в директории `backend` и задать следующие переменные:
 
    ```plaintext
    ALG=HS256
@@ -50,13 +44,15 @@
    DB_USER=your_db_user(postgres)
    DB_PASSWORD=your_db_password(postgres)
    ```
-4. Построить Docker контейнер:
+Файл уже создан, по желанию его можно изменить
+
+3. Построить Docker контейнер:
 
    ```bash
    docker-compose build
    ```
 
-5. Запустить контейнер:
+4. Запустить контейнер:
 
    ```bash
    docker-compose up
