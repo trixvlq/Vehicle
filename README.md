@@ -7,6 +7,8 @@
 <img src="https://img.shields.io/badge/DRF-800000?style=for-the-badge"/> 
 <img src="https://img.shields.io/badge/Docker-00BFFF?style=for-the-badge"/> 
 <img src="https://img.shields.io/badge/PostgreSQL-87CEEB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white"/>
+
 
 ## Описание проекта
 
