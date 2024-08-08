@@ -32,7 +32,7 @@
 1. Клонировать репозиторий:
 
    ```bash
-   git clone https://github.com/trixvlq/CarManagement.git
+   git clone https://github.com/trixvlq/Vehicle.git
    ```
 
 2.  Создать файл `.env` в директории `backend` и задать следующие переменные:
