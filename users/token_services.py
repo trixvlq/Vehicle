@@ -43,7 +43,7 @@ def validate_token(request):
         return token
     else:
         if check_token(refresh):
-            token = jwt.decode(refresh, settings.SECRET_KEY, algorithms=[env('ALGORITHM')])
-            token = jwt.encode(token, settings.SECRET_KEY, algorithm=[env('ALGORITHM')])
+            token = jwt.decode(refresh, settings.SECRET_KEY, algorithm=env('ALGORITHM'))
+            token = jwt.encode(token, settings.SECRET_KEY, algorithm=env('ALGORITHM'))
             return token
     return False

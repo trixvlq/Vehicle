@@ -37,9 +37,9 @@ class TokenPermission(BasePermission):
 
         if refresh and check_token(refresh):
             try:
-                new_payload = jwt.decode(refresh, settings.SECRET_KEY, algorithms=[env('ALGORITHM')])
+                new_payload = jwt.decode(refresh, settings.SECRET_KEY, algorithm=env('ALGORITHM'))
                 new_payload['exp'] = datetime.now(timezone.utc) + timedelta(minutes=60)
-                new_token = jwt.encode(new_payload, settings.SECRET_KEY, algorithms=[env('ALGORITHM')])
+                new_token = jwt.encode(new_payload, settings.SECRET_KEY, algorithm=env('ALGORITHM'))
                 request.new_token = new_token
                 return True
             except (jwt.DecodeError, jwt.ExpiredSignatureError):

@@ -57,8 +57,8 @@ class LoginView(APIView):
             'exp': datetime.now(timezone.utc) + timedelta(days=1),
             'iat': datetime.now(timezone.utc)
         }
-        token = jwt.encode(payload, settings.SECRET_KEY, algorithms=[env('ALGORITHM')])
-        refresh_token = jwt.encode(refresh_payload, settings.SECRET_KEY, algorithms=[env('ALGORITHM')])
+        token = jwt.encode(payload, settings.SECRET_KEY, algorithm=env('ALGORITHM'))
+        refresh_token = jwt.encode(refresh_payload, settings.SECRET_KEY, algorithm=env('ALGORITHM'))
         response = Response()
 
         response.set_cookie(key='jwt', value=token, httponly=True)
