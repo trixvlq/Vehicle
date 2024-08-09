@@ -231,6 +231,3 @@ GET /v1/cars/?make=Toyota&year=2022&page=1&page_size=10
 - Имя: Цзю Максим
 - Email: qwefghnz@gmail.com
 - GitHub: [trixvlq](https://github.com/trixvlq)
-
-Эта структура включает все необходимые детали и полезные примеры, которые помогут пользователям понять, как использовать
-ваше API и запустить проект.
